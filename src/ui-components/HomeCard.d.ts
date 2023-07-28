@@ -7,14 +7,14 @@
 import * as React from "react";
 import { Home } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { FlexProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type HomeCardOverridesProps = {
     HomeCard?: PrimitiveOverrideProps<ViewProps>;
     "mobile-cover-cutout-menbags-data 1"?: PrimitiveOverrideProps<ImageProps>;
-    Cardarea?: PrimitiveOverrideProps<ViewProps>;
-    Description?: PrimitiveOverrideProps<TextProps>;
+    Cardarea?: PrimitiveOverrideProps<FlexProps>;
     Title?: PrimitiveOverrideProps<TextProps>;
+    Description?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type HomeCardProps = React.PropsWithChildren<Partial<ViewProps> & {
     home?: Home;
